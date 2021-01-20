@@ -1,0 +1,20 @@
+{
+  "name": "type-signature",
+  "version": "1.0.0",
+  "description": "A generator for converting your text into a signature image",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "text",
+    "signature"
+  ],
+  "author": "Alex Partitsky",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
