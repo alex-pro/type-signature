@@ -1,6 +1,6 @@
 {
   "name": "type-signature",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A generator for converting your text into a signature image",
   "main": "index.js",
   "scripts": {
@@ -21,5 +21,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
+    "canvas": "^2.6.1",
+    "jsdom": "^16.4.0"
   }
 }
