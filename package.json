@@ -1,6 +1,6 @@
 {
   "name": "type-signature",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A generator for converting your text into a signature image",
   "main": "index.js",
   "scripts": {
