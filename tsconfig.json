@@ -8,17 +8,12 @@
     "noImplicitReturns": true,
     "strict": true,
     "noUnusedLocals": true,
-    "types": ["chai", "mocha", "node"],
-    "baseUrl": "src",
-    "plugins": [
-      { "transform": "typescript-transform-paths" }
-    ],
-    "paths": {
-      "@fonts/*": [ "assets/fonts/*" ]
-    },
+    "types": ["chai", "mocha", "node"]
   },
+  "include": ["src/**/*"],
   "exclude": [
     "dist",
-    "node_modules"
+    "node_modules",
+    "tests"
   ]
 }

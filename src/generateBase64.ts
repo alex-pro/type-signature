@@ -1,8 +1,8 @@
 import { createCanvas, registerFont } from 'canvas';
 import { Parameters } from './interfaces/parameters';
-import path = require('path');
-const fontPath = path.join(__dirname, 'assets/fonts/HomemadeApple-Regular.ttf');
+import { join } from 'path';
 
+const fontPath = join(__dirname, 'fonts/HomemadeApple-Regular.ttf');
 registerFont(fontPath, { family: 'Homemade Apple' });
 
 export function generateBase64(p: Parameters): string {
