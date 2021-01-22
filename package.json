@@ -4,11 +4,11 @@
   "description": "A generator for converting your text into a signature image",
   "main": "dist/generateBase64.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && npm run copy:assets",
     "test": "ts-mocha tests/**/*.test.ts",
     "coverage": "nyc npm test",
     "lint": "eslint ./**/*.ts",
-    "copy:assets": "cp -rv src/assets dist/src/assets/"
+    "copy:assets": "cp -rv src/fonts dist/fonts/"
   },
   "repository": {
     "type": "git",
