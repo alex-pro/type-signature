@@ -1,9 +1,7 @@
 import { createCanvas, registerFont } from 'canvas';
-import { Parameters } from './interfaces/parameters';
-import { join } from 'path';
+import path from 'path';
 
-const fontPath = join(__dirname, 'fonts/HomemadeApple-Regular.ttf');
-registerFont(fontPath, { family: 'Homemade Apple' });
+registerFont(path.resolve('fonts/HomemadeApple-Regular.ttf'), { family: 'Homemade Apple' });
 
 export function generateBase64(p: Parameters): string {
   const sizeMultiplier = p.sizeMultiplier || 1;
@@ -22,4 +20,9 @@ export function generateBase64(p: Parameters): string {
   ctx.fillText(p.text, canvas.width * 0.025, canvas.height * 0.57);
 
   return canvas.toDataURL();
+}
+
+export interface Parameters {
+  text: string;
+  sizeMultiplier?: number;
 }

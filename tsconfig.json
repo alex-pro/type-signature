@@ -8,7 +8,8 @@
     "noImplicitReturns": true,
     "strict": true,
     "noUnusedLocals": true,
-    "types": ["chai", "mocha", "node"]
+    "types": ["chai", "mocha", "node"],
+    "esModuleInterop": true
   },
   "include": ["src/**/*"],
   "exclude": [

@@ -4,7 +4,7 @@
   "description": "A generator for converting your text into a signature image",
   "main": "dist/generateBase64.js",
   "scripts": {
-    "build": "tsc && npm run copy:assets",
+    "build": "tsc",
     "test": "ts-mocha tests/**/*.test.ts",
     "coverage": "nyc npm test",
     "lint": "eslint ./**/*.ts",
@@ -37,7 +37,6 @@
     "typescript": "^4.1.3"
   },
   "dependencies": {
-    "canvas": "^2.6.1",
-    "path": "^0.12.7"
+    "canvas": "^2.6.1"
   }
 }
