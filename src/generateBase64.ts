@@ -1,6 +1,6 @@
 import { createCanvas, registerFont } from 'canvas';
 
-registerFont(__dirname + '/fonts/HomemadeApple-Regular.ttf', { family: 'Homemade Apple' });
+registerFont('./fonts/HomemadeApple-Regular.ttf', { family: 'Homemade Apple' });
 
 export function generateBase64(p: Parameters): string {
   const sizeMultiplier = p.sizeMultiplier || 1;
